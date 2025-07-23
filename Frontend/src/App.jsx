@@ -153,25 +153,7 @@ function App() {
           </div>
 
           {/* Generate Button Section - Centered */}
-          <div className="generate-button-section" style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-            <button
-              onClick={handleGenerate}
-              disabled={loading || !emailContent.trim()}
-              className="btn btn-primary"
-              style={{ minWidth: '200px' }}
-            >
-              {loading ? (
-                <>
-                  <div className="btn-spinner"></div>
-                  Generating...
-                </>
-              ) : (
-                <>
-                  ✨ Generate Email
-                </>
-              )}
-            </button>
-          </div>
+
 
           {/* Output Section */}
           <div className="card output-card">
@@ -208,6 +190,25 @@ function App() {
                 </div>
               )}
             </div>
+                      <div className="generate-button-section" style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+            <button
+              onClick={handleGenerate}
+              disabled={loading || !emailContent.trim()}
+              className="btn btn-primary"
+              style={{ minWidth: '200px' }}
+            >
+              {loading ? (
+                <>
+                  <div className="btn-spinner"></div>
+                  Generating...
+                </>
+              ) : (
+                <>
+                  ✨ Generate Email
+                </>
+              )}
+            </button>
+          </div>
           </div>
         </div>
 
